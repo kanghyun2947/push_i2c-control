@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.pcb.PCBFragment">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pcb_test"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:text="작동 확인"
+                android:textAlignment="center"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:id="@+id/pcb_test_result"
+                style="@style/result"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="정상"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pcb_pass_test"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:text="투출 확인"
+                android:textAlignment="center"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:id="@+id/pcb_pass_test_result"
+                style="@style/result"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text="정상"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pcb_door_test"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:text="도어 확인"
+                android:textAlignment="center"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:id="@+id/pcb_door_test_result"
+                style="@style/result"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text="열림"
+                android:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pcb_led_test"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:text="LED 작동"
+                android:textAlignment="center"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:id="@+id/pcb_led_test_result"
+                style="@style/result"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text="켜짐"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pcb_motor_reset"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+                android:text="모터 리셋"
+                android:textAlignment="center"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:id="@+id/pcb_motor_reset_result"
+                style="@style/result"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="진행"
+                android:visibility="invisible" />
+        </GridLayout>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/version"
+        style="@style/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="1.0.0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

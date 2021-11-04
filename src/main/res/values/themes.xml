@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Kiosk_tester" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryVariant">#424242</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Button">
+        <item name="android:backgroundTint">#333333</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+    <style name="result">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+    <style name="Motor_Button">
+        <item name="android:backgroundTint">#333333</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_width">205dp</item>
+        <item name="android:layout_height">210dp</item>
+        <item name="android:layout_gravity">top</item>
+
+    </style>
+</resources>

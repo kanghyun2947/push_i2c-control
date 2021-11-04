@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PUSH.PUSHFragment">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#5E5E5E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="50dp"
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <Button
+                android:id="@+id/productCheck_btn"
+                android:layout_width="122dp"
+                android:layout_height="79dp"
+                android:text="상품확인"
+                android:textSize="20sp"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/pushStart_btn"
+                android:layout_width="121dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="22dp"
+                android:text="시작"
+                android:textSize="20sp"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/count_btn"
+                android:layout_width="121dp"
+                android:layout_height="77dp"
+
+                android:text="1회"
+                android:textSize="20sp"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <Button
+                android:id="@+id/product1_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:text="P1"
+                android:textSize="25sp"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/product2_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:text="P2"
+                android:textSize="25sp"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/product3_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:text="P3"
+                android:textSize="25sp"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/product4_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="P4"
+                android:textSize="25sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/product5_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="P5"
+                android:textSize="25sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/product6_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="P6"
+                android:textSize="25sp"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/pushReset_btn"
+                android:layout_width="133dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:text="초기화"
+                android:textSize="25sp"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="133dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="푸쉬 테스트"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_column="1"
+                app:layout_row="3" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

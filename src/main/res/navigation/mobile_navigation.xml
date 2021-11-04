@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_motor">
+
+    <fragment
+        android:id="@+id/navigation_motor"
+        android:name="com.example.kiosk_tester.ui.motor.MotorFragment"
+        android:label="@string/title_motor"
+        tools:layout="@layout/fragment_motor" />
+    <fragment
+        android:id="@+id/navigation_pcb"
+        android:name="com.example.kiosk_tester.ui.pcb.PCBFragment"
+        android:label="@string/title_pcb"
+        tools:layout="@layout/fragment_pcb" />
+
+    <fragment
+        android:id="@+id/navigation_card"
+        android:name="com.example.kiosk_tester.ui.card.CardFragment"
+        android:label="@string/title_card"
+        tools:layout="@layout/fragment_card" />
+
+    <fragment
+        android:id="@+id/navigation_push"
+        android:name="com.example.kiosk_tester.ui.PUSH.PUSHFragment"
+        android:label="Push"
+        tools:layout="@layout/push" />
+
+
+</navigation>

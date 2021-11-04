@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.motor.MotorFragment">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="80dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reset_btn"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginRight="300dp"
+                android:text="초기화"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:cornerRadius="15dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/one_infinit_btn"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginRight="20dp"
+                android:text="1회"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:cornerRadius="15dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/start_btn"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+
+                android:backgroundTint="#01A9DB"
+                android:text="시작"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:cornerRadius="15dp"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp">
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginRight="30dp"
+                android:text="실행"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/execute_cnt"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginRight="80dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_marginRight="30dp"
+                android:text="성공"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/success_cnt"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_marginRight="80dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_marginRight="30dp"
+                android:text="실패"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/fail_cnt"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="top"
+            android:layout_marginBottom="50dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M1"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginRight="10dp"
+                android:text="M1"
+                app:cornerRadius="50dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M2"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:text="M2"
+                app:cornerRadius="50dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M3"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="M3"
+                app:cornerRadius="50dp"
+                />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginBottom="50dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M4"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginRight="10dp"
+                android:text="M4"
+                app:cornerRadius="50dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M5"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginRight="10dp"
+                android:text="M5"
+                app:cornerRadius="50dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M6"
+                style="@style/Motor_Button"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="M6"
+                app:cornerRadius="50dp"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text=""
+                android:textColor="#F42700"
+                android:textSize="50sp" >
+
+            </TextView>
+        </GridLayout>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
